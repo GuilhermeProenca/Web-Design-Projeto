@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <style>
+      .button {
+          width: 400px;
+          height: 200px;
+          cursor: pointer;
+          opacity: 0.6;
+          color: black;
+      }
+
+      .navBar {
+        width: 100px;
+        height: 50px;
+        transition-duration: 0.4s;
+      }
+
+      .navBar:hover {
+        width: 100px;
+        height: 50px;
+        background: #f89553;
+        transition-duration: 0.4s;
+      }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="alert alert-primary" role="alert">
+        <a href="indexFormB.html" target="_parent">
+          <img src='logo2.png' alt=”logo” width=250 height=80>
+        </a>
+        <div style="text-align:center">
+          <h3><b><i>"Seu resumo de tecnologia."</i></b></h3>
+          <nav>
+            <a href="indexFormB.html" target="_parent">
+              <button class="navBar">
+                Home
+              </button>
+            </a>
+            <a href="sobreNos.html" target="_parent">
+              <button class="navBar">
+                Sobre Nós
+              </button>
+            </a>
+            <a href="contato.html" target="_parent">
+                <button class="navBar">
+                Contato
+                </button>
+            </a>
+          </nav>
+        </div>
+    </div>
+
+    <form action="processa.php" method="get">
+      
+    <div class="form-row">
+        <div class="form-group col-md-4">
+           <label for="idemail">Email </label>
+           <input class="form-control" type="email" name="email" id="idemail" required autofocus placeholder="Informe seu email">
+        </div>
+        <div class="form-group col-md-8">
+           <label for="idnome">Nome </label>
+           <input class="form-control" type="text" name="nome" id="idnome" maxlength="50" minlength="15" size="50"  required placeholder="Informe seu nome">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="idPacotes">Pacotes de Viagem</label>
+         
+        </div>
+        <div class="form-group col-md-3">
+            <p>Adicionais</p>
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="adicionais"  value="tour">
+            <label class="form-check-label" for="inlineCheckbox1">Tour</label>
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="adicionais" value="passeios">
+            <label class="form-check-label" for="inlineCheckbox1">Passeios</label>
+        </div>
+
+        <div class="form-group col-md-3">
+          <label for="inputState">Empresas aéreas</label>
+          <select id="inputState" class="form-control" name="empresa">
+            <option selected>Escolha a empresa...</option>
+            <option value="azul">Azul</option>
+            <option value="gol">GOL</option>
+          </select>
+        </div>
+    
+      </div>
+
+      
+        <input class="btn btn-outline-primary" type="submit" value="Fazer Orçamento">
+        <input class="btn btn-outline-danger" type="reset" value="Novo Orçamento">
+
+    </form>
+
+    <div style="text-align:center">
+      <a href="homeNoticia01.html" target="_parent">
+        <button class="button" style="background: url(https://www.designerd.com.br/wp-content/uploads/2018/11/download-icones-facebook-1.png)">
+          <p>Facebook altera regras de trabalho remoto após queda geral da última segunda-feira</p>
+        </button>
+      </a>
+
+      <a href="homeNoticia02.html" target="_parent">
+        <button class="button">
+          <p>IA completa obra inacabada de Beethoven</p>
+        </button>
+      </a>
+
+      <a href="homeNoticia03.html" target="_parent">
+        <button class="button">
+          <p>AMD alerta que Windows 11 reduz desempenho de CPUs em até 15%</p>
+        </button>
+      </a>
+      
+      <a href="homeNoticia04.html" target="_parent">
+        <button class="button">
+          <p>Brasil é o quinto maior produtor de lixo eletrônico do mundo</p>
+        </button>
+      </a>
+
+      <details> <summary>Notícias anteriores</summary>
+        <a href="homeNoticia05.html" target="_parent">
+          <button class="button">
+            <p>Nova abordagem no treinamento de IA faz drone voar em alta velocidade no meio de floresta densa desconhecida</p>
+          </button>
+        </a>
+        
+        <a href="homeNoticia06.html" target="_parent">
+          <button class="button">
+            <p>ONU lança campanha global para incentivar uso de IAs e reduzir pela metade fatalidades no trânsito até 2030</p>
+          </button>
+        </a>
+      </details>
+    </div>
+
+</div> 
+</body>
+</html>
